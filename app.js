@@ -6,7 +6,7 @@ let numeroSecreto = Math.floor(Math.random() * 50)  //math.floor serve para aren
 
 let numeroTentativa = 0;
 
-while (numeroTentativa <= 3 ) {
+while(numeroTentativa<= 5) {
     let numeroEscholido = parseInt(prompt('digite um numero de 1 a 50'));
     if (numeroSecreto == numeroEscholido) {                 //o if é se e o else if é senao se ja o else é senao
             
@@ -18,4 +18,4 @@ while (numeroTentativa <= 3 ) {
              alert(`o numero  ${numeroEscholido} é maior`);
          }
          numeroTentativa = numeroTentativa + 1;
-}
+        }
