@@ -6,9 +6,9 @@ let numeroSecreto = 5;                                                      //us
 let numeroEscholido = parseInt (prompt('digite um numero de 1 a 50'));
 
 if (numeroSecreto == numeroEscholido) {                   //o if é se e o else if é senao se ja o else é senao
-    alert(`parabens vocé acertou ${numeroSecreto}`);
+    alert(`parabens vocé acertou ${numeroEscholido}`);
     } else if(numeroSecreto<numeroEscholido) {
-        alert('o numero  é menor');
+        alert(`o numero ${numeroEscholido} é menor do que o secreto`);
     } else {
-        alert('o numero é maior');
+        alert(`o numero  ${numeroEscholido} é maior`);
     }
