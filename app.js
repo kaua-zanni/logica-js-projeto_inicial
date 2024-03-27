@@ -4,7 +4,6 @@ alert('ola');  // aparece  para o usuario um janela de alerta
 
 let numeroSecreto = Math.floor(Math.random() * 50)  //math.floor serve para arendondar um numero e math.random()  *x serve para randomizar numeros                                                //usamos para declara uma varivel
 
-let numeroTentativa = 0;
 
 for (let index = 0; index=20 ; index++) {
    
@@ -18,7 +17,5 @@ for (let index = 0; index=20 ; index++) {
              } else {
                  alert(`o numero  ${numeroEscholido} é maior`);
              }
-             numeroTentativa = numeroTentativa + 1;      
+                  
 }
-
-
