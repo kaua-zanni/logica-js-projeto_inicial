@@ -6,7 +6,7 @@ let numeroSecreto = Math.floor(Math.random() * 50)  //math.floor serve para aren
 
 let numeroTentativa = 0;
 
-while(numeroTentativa<= 5) {
+while(numeroTentativa <= 3) {
     let numeroEscholido = parseInt(prompt('digite um numero de 1 a 50'));
     if (numeroSecreto == numeroEscholido) {                 //o if é se e o else if é senao se ja o else é senao
             
@@ -19,3 +19,19 @@ while(numeroTentativa<= 5) {
          }
          numeroTentativa = numeroTentativa + 1;
         }
+for (let index = 0; index=20 ; index++) {
+  
+    
+        let numeroEscholido = parseInt(prompt('digite um numero de 1 a 50'));
+        if (numeroSecreto == numeroEscholido) {                 //o if é se e o else if é senao se ja o else é senao
+                
+            alert(`parabens vocé acertou ${numeroEscholido}`);
+            break;
+             } else if(numeroSecreto<numeroEscholido) {
+                 alert(`o numero ${numeroEscholido} é menor do que o secreto`);   //usamos a crase (`) quando precisamos integrar uma variravel no alert
+             } else {
+                 alert(`o numero  ${numeroEscholido} é maior`);
+             }
+             numeroTentativa = numeroTentativa + 1;
+            
+}
