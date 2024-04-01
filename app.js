@@ -1,34 +1,31 @@
 
-let numeroSecreto = Math.floor(Math.random() * 5 + 1);
+let numeroSecreto = Math.floor(Math.random() * 2 + 1 );
 let tentativas = 1;
 
-//while é para repetir o código enquanto o numero de tentativas for menor que 4
-while (tentativas < 4) {
-    let numeroDigitado = parseInt(prompt('Digite um número de 1 a 5'));
+while (tentativas < 6) {
 
-    //if é para verificar se o número secreto é igual ao numero digitado
-    if(numeroDigitado === numeroSecreto){
+    let numeroEscholido = parseInt(prompt('Digite um número de 1 a 50'));
+
+    if(numeroEscholido === numeroSecreto){
         alert('Parabéns, você acertou!');
         break;
 
-       //else if é para verificar se o número digitado é maior que o numero secreto
-    } else if(numeroDigitado > numeroSecreto){
+    }else if(numeroEscholido > numeroSecreto){
         alert('Você digitou um número maior que o número secreto');
-    } else {
+    }else {
         alert('Você digitou um número menor que o número secreto');
     }
     tentativas++;
-    if(tentativas === 4){
+    if(tentativas === 6){
         alert(`Suas tentativas acabaram`);
-    } else if (tentativas <3){
-        alert(`você ainda tem  ${4 - tentativas} tentativas`);   
+    }else if (tentativas <3){
+        alert(`você ainda tem  ${6 - tentativas} tentativas`);   
     }else{
-        alert(`você ainda tem  ${4 - tentativas} tentativa`);
+        alert(`você ainda tem  ${6 - tentativas} tentativa`);
     }    
 }
 
-//palavraTentativa recebendo o resultado de um tenário (ou 'tentativas' ou 'tentativa')
 let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
-if(tentativas < 4){
-    alert(`Você acertou com ${tentativas} ${palavraTentativa}`)
+if (tentativas < 6) {
+alert(`Você acertou com ${tentativas} ${palavraTentativa}`);
 }
