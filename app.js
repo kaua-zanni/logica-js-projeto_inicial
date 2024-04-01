@@ -1,8 +1,7 @@
 
-let numeroSecreto = Math.floor(Math.random() * 2 + 1 );
-let tentativas = 1;
+let numeroSecreto = Math.floor(Math.random() * 50 + 1 );
 
-while (tentativas < 6) {
+for ( let tentativas = 1; tentativas < 6; tentativas++ ) {
 
     let numeroEscholido = parseInt(prompt('Digite um número de 1 a 50'));
 
@@ -15,7 +14,6 @@ while (tentativas < 6) {
     }else {
         alert('Você digitou um número menor que o número secreto');
     }
-    tentativas++;
     if(tentativas === 6){
         alert(`Suas tentativas acabaram`);
     }else if (tentativas <3){
