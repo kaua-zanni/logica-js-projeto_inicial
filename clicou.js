@@ -7,3 +7,6 @@ function clicou(){
 function zerarContador() {
     click = 0
 }
+
+
+
