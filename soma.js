@@ -1,10 +1,16 @@
+function media() {
 
-function somaNumeros(a,b) {
-    let soma = a + b 
-    alert(` a soma dos valores é ${soma}`)
-    
+    let notas = []
+    let resultado= 0
+    for (let index = 0; index < 4; index++) {
+        notas.push(parseInt(prompt('digite as notas')))
+        resultado = resultado + notas[index]
+    }
+    resultado = resultado/4
+
+    alert(`${resultado}`)
+
 }
-let numero1 = parseInt(prompt('qual o primeiro numero'));
-let numero2 = parseInt(prompt('qual o sequndo numero'));
-
-somaNumeros(numero1,numero2)
+function clicou() {
+    media()
+}

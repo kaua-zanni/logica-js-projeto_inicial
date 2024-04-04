@@ -1,11 +1,8 @@
-
-
 function numeroAleatorio(index) {
 
     return Math.floor(Math.random() * index + 1 );
 
 }
-
 
 function jogo() {
     
@@ -13,13 +10,15 @@ let numeroDePosicoesAleatorias = parseInt(prompt('quantos numeros voce dejeja al
 let numeroSecreto = numeroAleatorio(numeroDePosicoesAleatorias);
 let numeroMaximoDeTentativa=parseInt(prompt('quantas tentativas dejeja ter'))
 numeroMaximoDeTentativa++
+let listaNumerosDigitados = [];
 
-for ( tentativas = 1; tentativas < numeroMaximoDeTentativa; tentativas++ ) {
+for ( tentativas = 0; tentativas < numeroMaximoDeTentativa; tentativas++ ) {
 
     let numeroEscholido = parseInt(prompt(`digite um numero de 1 a ${numeroDePosicoesAleatorias}`));
-
+    listaNumerosDigitados.push(numeroEscholido)
+    alert(`vocé digitou o numero ${listaNumerosDigitados[tentativas]}`);
     if(numeroEscholido === numeroSecreto){
-        alert('Parabéns, você acertou!');
+        alert(`Você acertou , e digitou os sequintes numeros ${listaNumerosDigitados}`);
         break;
 
     }else if(numeroEscholido > numeroSecreto){
@@ -36,11 +35,6 @@ for ( tentativas = 1; tentativas < numeroMaximoDeTentativa; tentativas++ ) {
     }    
 }
 
-}
-
-let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
-if (tentativas < numeroMaximoDeTentativa) {
-alert(`Você acertou com ${tentativas} ${palavraTentativa}`);
 }
 
 function clicou(){
