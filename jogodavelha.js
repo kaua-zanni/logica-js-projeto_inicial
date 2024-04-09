@@ -5,7 +5,7 @@ let velha =[
    [7,8,9],
 ]
 console.table(velha);
-for (let index = 0; index < 9; index++) {
+for (let index = 0; index < 10; index++) {
     alert('em qual posiçao dejesa cololocar o x');
     let lugar=parseInt(prompt('se for mo 1 digite,se for no 2 digite 2 se for no 3 digite 3 e assim por diante'));
     if(lugar == 1 ){
