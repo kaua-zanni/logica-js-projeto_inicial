@@ -4,6 +4,6 @@ function inverter(x) {
 }
 let palavrainvertda = inverter(palavra)
 alert(`${palavrainvertda}`)
-if(palavra==palavrainvertda){
-    alert('essa palavra é uma palíndromo')
+    if(palavra==palavrainvertda){
+         alert('essa palavra é uma palíndromo')
 }
